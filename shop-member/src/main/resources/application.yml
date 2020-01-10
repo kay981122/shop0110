@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: member-client
+  devtools:
+    restart:
+      enabled: true
+  datasource:
+    username: root
+    password: hekaimin123
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
+    cache: false
+  redis:
+    host: 129.204.172.191
+    database: 0
+    port: 6379
+    password: hekaimin123
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+
+server:
+  port: 8080
