@@ -1,6 +1,6 @@
 package com.hkm.shop.member.controller;
 
-import com.hkm.shop.member.bean.Member;
+import com.hkm.shop.bean.Member;
 import com.hkm.shop.member.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

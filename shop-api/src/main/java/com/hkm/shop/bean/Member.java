@@ -1,9 +1,17 @@
-package com.hkm.shop.member.bean;
+package com.hkm.shop.bean;
 
+import tk.mybatis.mapper.annotation.KeySql;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 
+@Table(name="ums_member")
 public class Member implements Serializable {
+    @Id
+    @KeySql(useGeneratedKeys = true) //获取add后自动生成的主键
     private Integer id;
     private String username;
     private String password;
@@ -11,6 +19,7 @@ public class Member implements Serializable {
     private String nickname;
     private String phone;
     private Integer status;
+    @Column(name="create_time")
     private Date createTime;
     private String icon;
     private Integer gender;
